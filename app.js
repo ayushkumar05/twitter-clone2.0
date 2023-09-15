@@ -4,7 +4,7 @@ var fs = require('fs')
 var cookieParser = require('cookie-parser')
 var morgan = require('morgan')
 var compression = require('compression')
-var cors = require('cors')
+// var cors = require('cors')
 var mongoose = require('mongoose')
 const webpush = require('web-push')
 
@@ -32,7 +32,7 @@ mongoose
 var app = express()
 const passport = require('./passport')
 //app.set('trust proxy', 1) // trust first proxy, when node is behind proxy server
-app.use(cors())
+// app.use(cors())
 app.use(sessionMiddleware)
 
 // create a write stream (in append mode)
